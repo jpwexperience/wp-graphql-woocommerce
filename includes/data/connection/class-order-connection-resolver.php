@@ -281,7 +281,7 @@ class Order_Connection_Resolver extends AbstractConnectionResolver {
 		}
 
 		if ( ! empty( $where_args['statuses'] ) ) {
-			if ( 1 === count( $where_args ) ) {
+			if ( 1 === count( $where_args['statuses'] ) ) {
 				$args['status'] = $where_args['statuses'][0];
 			} else {
 				$args['status'] = $where_args['statuses'];
